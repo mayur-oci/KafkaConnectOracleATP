@@ -1,0 +1,15 @@
+{
+ "name": "oss-atp-connector",
+ "config": {
+  "connector.class": "io.confluent.connect.jdbc.JdbcSourceConnector",
+  "tasks.max": "100",
+  "connection.url": "jdbc:oracle:thin://adb.us-sanjose-1.oraclecloud.com:1521/yjmrtmnecefkd5e_database0_high.atp.oraclecloud.com",
+  "connection.user": "ADMIN",
+  "connection.password": "aaaBBB111___",
+  "mode": "incrementing",
+  "incrementing.column.name": "ID",
+  "topic.prefix": "demo-stream-",
+  "table.whitelist": "TEST",
+  "numeric.mapping": "best_fit"
+ }
+}
