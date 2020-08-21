@@ -3,7 +3,7 @@
  "config": {
   "connector.class": "io.confluent.connect.jdbc.JdbcSourceConnector",
   "tasks.max": "100",
-  "connection.url": "jdbc:oracle:thin:@database0_high?TNS_ADMIN=/home/opc/kafkaStuff",
+  "connection.url": "jdbc:oracle:thin:@database0_high?TNS_ADMIN=/home/opc/kafkaStuff/wallet",
   "connection.user": "connectdemo",
   "connection.password": "aaaBBB111___",
   "mode": "incrementing",
