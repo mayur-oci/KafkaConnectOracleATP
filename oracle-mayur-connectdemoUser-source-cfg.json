@@ -1,0 +1,15 @@
+{
+ "name": "oss-atp-connector",
+ "config": {
+  "connector.class": "io.confluent.connect.jdbc.JdbcSourceConnector",
+  "tasks.max": "100",
+  "connection.url": "jdbc:oracle:thin:@database0_high?TNS_ADMIN=/home/opc/confluent/walletMayur",
+  "connection.user": "connectdemo",
+  "connection.password": "aaaBBB111___",
+  "mode": "incrementing",
+  "incrementing.column.name": "ID",
+  "topic.prefix": "demo-stream-",
+  "table.whitelist": "TEST",
+  "numeric.mapping": "best_fit"
+ }
+}
